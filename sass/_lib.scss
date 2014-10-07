@@ -1,0 +1,43 @@
+@mixin roundtap($colour:#fff,$radius:1em){
+	border: 3px $colour solid;
+	border-radius: $radius;
+	padding: 5px;
+}
+@mixin textshadow(){
+	text-shadow: 1px 1px 3px rgba(0,0,0, 0.5);
+}
+@mixin boxshadow(){
+	box-shadow: 1px 1px 3px rgba(0,0,0, 0.7);
+}
+
+@mixin bottomCenter($bottomMargin:1.5em){
+	position:absolute;
+    bottom: $bottomMargin;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+@mixin easyinput(){
+	width: 85%;
+    display: block;
+    margin: auto;
+    margin-bottom: 0.5em;
+    border: 1px $lightBlue solid;
+    line-height: 150%;
+    color: $blue;
+    // padding: 0.3em;
+    
+}
+@mixin easysubmit(){
+	border: none;
+	border-radius: 0.2em;;
+	background: $darkBlue;
+	color:#fff;
+	width: 85%;
+	padding: 0.3em;
+}
+
+@mixin easyPlaceholder(){
+	color:    $blue;
+    opacity:  0.6;
+}
