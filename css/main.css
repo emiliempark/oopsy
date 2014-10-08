@@ -527,6 +527,13 @@ html {
   line-height: 1.4;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -745,6 +752,8 @@ h4, legend {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.7);
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100;
 }
 
@@ -753,6 +762,8 @@ h4, legend {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100;
 }
 
@@ -768,32 +779,77 @@ h4, legend {
   font-size: 0.8em;
   text-align: center;
   position: absolute;
-  z-index: 200;
+  z-index: 500;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
+.left_button, .right_button {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.left_button {
+  left: 0;
+}
+
+.right_button {
+  right: 0;
+}
+
 .control_panel {
   position: absolute;
-  width: 70%;
-  height: 100%;
-  background-color: #4b464d;
+  top: 0;
+  width: 60%;
+  height: 100vh;
+  background-color: #3e3e42;
   color: #fff;
-  padding: 3.3em 0.8em 0;
-  z-index: 50;
+  padding: 0 0.8em 0;
+  z-index: 200;
 }
 
-nav p {
+.control_panel.left {
+  left: 0px;
+}
+
+.control_panel.right {
+  right: 0px;
+}
+
+#leftControl {
+  left: -100%;
+  transition: left 0.5s ease;
+}
+
+#rightControl {
+  right: -100%;
+  transition: right 0.5s ease;
+}
+
+#leftControl.show {
+  left: 0%;
+}
+
+#rightControl.show {
+  right: 0%;
+}
+
+.control_panel p {
   padding: 0.8em 0.5em;
-  margin: 0;
+  margin: 3.3em 0 0 0;
 }
 
-nav ul {
+.control_panel ul {
   background-color: transparent;
   margin: 0;
 }
 
-nav a {
+.control_panel a {
   display: block;
   padding: 0.8em 0.5em;
   color: #fff;
@@ -802,7 +858,12 @@ nav a {
   border-top: rgba(255, 255, 255, 0.5) 1px solid;
 }
 
-nav i {
+.control_panel a:hover {
+  background-color: #5373a5;
+  border-top: #5373a5 1px solid;
+}
+
+.control_panel i {
   margin-right: 1em;
 }
 
@@ -811,6 +872,7 @@ nav i {
   background: #fff;
   position: relative;
   border-top: 1px transparent solid;
+  z-index: 1;
 }
 
 .main_landing {
@@ -908,7 +970,7 @@ nav i {
 input[type="submit"] {
   border: none;
   border-radius: 0.2em;
-  background: #3e3e42;
+  background: #4b464d;
   color: #fff;
   width: 85%;
   padding: 0.3em;
