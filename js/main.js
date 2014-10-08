@@ -1,12 +1,9 @@
 $(function(){
 
-	//left control
-
-	// $("#leftControl").css({"left":"-100%"});
 
 
 	$(".white_screen").on("click",function(){
-		console.log("bla")
+
 		$(this).addClass("hidden");
 		$("#leftControl").removeClass("show");
 		$("#rightControl").removeClass("show");
@@ -49,56 +46,16 @@ $(function(){
 		}
 	});
 
-
-
-	// $("#leftButton").on("click",function(e)
-	// {
-	// 	e.preventDefault();
-
-
-
-	// 	$(".white_screen").removeClass("hidden");
-		
-	// 	$("#leftControl").removeClass("hidden").animate({"left":"0"},800,'easeOutExpo',function(){
-
-	// 		$(".white_screen").on("click",function(){
-
-	// 			$(this).addClass("hidden");
-
-	// 			$("#leftControl").animate({"left":"-100%"},800,'easeOutQuint',function(){
-	// 				$("this").addClass("hidden");
-	// 			});
-
-	// 		});
-			
-	// 	});
-	
-	// }
-	// );
-
-
-	// //right control
-
-	// $("#rightControl").css({"right":"-100%"});
-
-	// $("#rightButton").on("click",function(e){
-	// 	e.preventDefault();
-
-	// 	$(".white_screen").removeClass("hidden");
-	// 	$("#rightControl").removeClass("hidden").animate({"right":"0"},800,'easeOutExpo',function(){
-
-	// 		$(".white_screen").on("click",function(){
-
-	// 			$(this).addClass("hidden");
-
-	// 			$("#rightControl").animate({"right":"-100%"},800,'easeOutQuint',function(){
-	// 				$("this").addClass("hidden");
-	// 			});
-
-	// 		});
-
-	// 	});
+	// $("#signin").on("click",function(){
+	// 	$(".white_screen").removeClass("hidden").css({"z-index":"2000"});
+	// 	// $("#signinPopup").
 	// });
 
+	var oModal1 = makeModal("signin", "signinPopup");
+	oModal1.initialise();
+
+	var oModal2 = makeModal("emailHandle", "emailForm");
+	oModal2.initialise();
 
 });
+

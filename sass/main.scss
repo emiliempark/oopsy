@@ -1,26 +1,18 @@
 /* ==========================================================================
-   Emilie's custom settings
-   ========================================================================== */
+/* Emilie's custom settings
+ /*========================================================================== */
 
 $blue: #5373a5;
-$lightBlue : #c1d3e8;
+$paleBlue : #c1d3e8;
+$lightBlue :#8fb2d8;
 $darkBlue: #4b464d;
 $grayBlue:#3e3e42;
 
 
 @import 'lib';
 @import 'reset';
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
 
 
 html,
@@ -41,6 +33,9 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+input:focus{
+    border-color: $blue;
+}
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -54,7 +49,7 @@ button:focus {
 }
 
 ::selection {
-    background: $lightBlue;
+    background: $paleBlue;
     text-shadow: none;
     color:#fff
 }
@@ -70,9 +65,7 @@ button:focus {
 :-ms-input-placeholder { /* Internet Explorer 10+ */
    @include easyPlaceholder();
 }
-/*
- * A better looking default horizontal rule
- */
+/*A better looking default horizontal rule*/
 
 hr {
     display: block;
@@ -280,9 +273,7 @@ h4,legend{
     left:0;
     z-index: 100;
 }
-.user_menu{
-    color: #8fb2d8; 
-}
+
 .tap_panel{
     width: 100%;
     background-color: $blue;
@@ -290,28 +281,33 @@ h4,legend{
     padding: 1em 0;
     font-size: 0.8em;
     text-align: center;
-    position: absolute;
+    position: fixed;
     z-index: 500;
     @include textshadow();
     @include boxshadow();
+
+    img{
+       width: 100px; 
+    }
+    .left_button, .right_button{
+        position:absolute;
+        width:50%;
+        height:100%;
+        top:0;
+        font-size:0;
+        border: none;
+        background-color:transparent;
+    }
+    .left_button{
+        left:0;
+    }
+    .right_button{
+        right:0;
+    }
 }
-.left_button, .right_button{
-    position:absolute;
-    width:50%;
-    height:100%;
-    top:0;
-    font-size:0;
-    border: none;
-    background-color:transparent;
-}
-.left_button{
-    left:0;
-}
-.right_button{
-    right:0;
-}
+
 .control_panel{
-    position:absolute;
+    position:fixed;
     top:0;
     width:60%;
     height:100vh;
@@ -319,12 +315,35 @@ h4,legend{
     color: #fff;
     padding: 0 0.8em 0;
     z-index: 200;
-}
-.control_panel.left{
-    left:0px;
-}
-.control_panel.right{
-    right:0px;
+    
+    .user_menu{
+        color: $lightBlue; 
+    }
+    p{
+        padding: 0.8em 0.5em;
+        margin: 3.3em 0 0 0;
+        
+    }
+    ul{
+        background-color: transparent;
+        margin:0;
+        
+        a{
+            display:block;
+            padding: 0.8em 0.5em;
+            color: #fff;
+            background-color: transparent;
+            text-decoration: none;
+            border-top: rgba(255,255,255, 0.5) 1px solid;
+        }
+        a:hover{
+            background-color: $blue;
+            border-top: $blue 1px solid;;
+        }
+    }
+    i{
+        margin-right: 1em;
+    }
 }
 
 #leftControl{
@@ -346,107 +365,120 @@ h4,legend{
 }
 
 
-.control_panel p{
-    padding: 0.8em 0.5em;
-    margin: 3.3em 0 0 0;
-    
-}
-.control_panel ul{
-    background-color: transparent;
-    margin:0;
-    
-}
-.control_panel ul li{
-}
-.control_panel a{
-    display:block;
-    padding: 0.8em 0.5em;
-    color: #fff;
-    background-color: transparent;
-    text-decoration: none;
-    border-top: rgba(255,255,255, 0.5) 1px solid;
-}
-.control_panel a:hover{
-    background-color: $blue;
-    border-top: $blue 1px solid;;
-}
-.control_panel i{
-    margin-right: 1em;
-}
 .main{
-    height:100vh;
+    height:90vh;
     background: #fff;
     position: relative;
     border-top:1px transparent solid;
     z-index:1;
-}
-.main_landing{
-    height: 20em;
-    border-top:1px #fff solid;
-    background-image: url(../img/bokeh.jpg);
-    background-size: cover;
-    background-position: center;    
-    background-repeat: no-repeat;
-    margin: 5em 0 0 0;
-    position: relative;
+
+    h1{
+        width: 90%;
+        color: #fff;
+        font-size: 1em;
+        font-weight: normal;
+        margin: 0 auto 1em;
+        text-align: center;
+        @include textshadow();
+    }
+
+    .main_landing{
+        height: 80%;
+        border-top:1px #fff solid;
+        background-image: url(../img/bokeh.jpg);
+        background-size: cover;
+        background-position: center;    
+        background-repeat: no-repeat;
+        margin: 5em 0 0 0;
+        position: relative;
+
+        img{
+            display:block;
+            margin: 3.5em auto 6em;;
+            border-top:1px transparent solid;
+        }
+        .wrapper{
+            width: 100%;
+            text-align:center;
+
+            #signin,#register{
+                display: inline-block;
+                text-decoration: none;
+                @include easysubmit(5.5em,rgba(0,0,0,0.55));
+                @include textshadow();       
+            }
+        }
+        .scrollDown{
+            width: 2em;
+            height:2em;
+            text-align:center;
+            line-height:2em;
+            border-radius: 1em;
+            border: 1px #fff solid;
+            @include bottomCenter();
+            @include textshadow();
+
+            i{
+            color: #fff;
+            margin: 0 0 0 1px;
+            }
+        }
+    }
 }
 
-.main_landing img{
-    display:block;
-    margin: 3em auto 1em;;
-    border-top:1px transparent solid;
+#guide{
+    h2{
+
+        width: 90%;
+        color:$blue;
+        text-align:center;
+        text-decoration: none;
+        @include roundtap($blue,2em);
+    }
 }
 
-.main_landing a{
-    display: block;
-    width: 90%;
-    color:#fff;
-    text-align:center;
-    text-decoration: none;
-    @include bottomCenter(2.5em);
-    @include roundtap(#fff,2em);
-    @include textshadow();
-    @include boxshadow();
-}
-.main_landing a i{
-    margin: 0 0 0 1em;
-}
-.main h1{
-    width: 90%;
-    color: #fff;
-    font-size: 1em;
-    font-weight: normal;
-    margin: 0 auto 1em;
-    text-align: center;
-    @include textshadow();
-}
-.main .scrollDown{
-    width: 2em;
-    height:2em;
-    text-align:center;
-    line-height:2em;
-    border-radius: 1em;
-    border: 1px $blue solid;
-    @include bottomCenter();
-}
-.scrollDown i{
-    color: $blue;
-    margin: 0 0 0 1px;
-}
-.sign_in_button{
+
+
+#signinPopup,#registerPopup{
     width: 90%;
     margin: 0 auto;
+    color: #fff;
     text-align: center;
-    @include roundtap($blue,2em);
+    border-radius:0.2em;
+    background-color: $blue;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    form{
+        padding:1em;
+    }
+    input{
+        background-color:$blue;
+        border-color:$paleBlue;
+        color:#fff;
+    }
+    input:focus{
+        border-color: #fff;
+    }
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        @include easyPlaceholder($paleBlue);
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       @include easyPlaceholder($paleBlue);
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       @include easyPlaceholder($paleBlue);
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+       @include easyPlaceholder($paleBlue);
+    }
+    [role="close-modal"]{
+    position: absolute;
+    top:0;
+    right:0;
+    padding-right: 0.5em;
 }
-.register{
-    width: 90%;
-    margin: 1em auto;
-    text-align: center;
-    @include roundtap($blue,1.5em);
-}
-.sign_in{
-
 }
 #map{
     width: 100%;
@@ -454,6 +486,15 @@ h4,legend{
     outline: 1px red solid;
 }
 
+footer{
+    background-color:$darkBlue;
+    color: #fff;
+    padding: 0.5em;
+    p{
+        
+        font-size: 0.9em;
+    }
+}
 input[type="submit"]{
     @extend input;
     @include easysubmit();

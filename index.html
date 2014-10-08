@@ -24,7 +24,8 @@
         <!-- your site begins -->
         <div id="container">
             <header>
-                <div class="tap_panel">Tap to open control panel
+                <div class="tap_panel">
+                    <img src="img/easyclaim_logo.png" alt="easyclaim">
                     <button id="leftButton" class="left_button"> tap left</button>
                     <button id="rightButton" class="right_button">tap right</button>
                 </div>
@@ -55,33 +56,52 @@
                 <div class="main_landing">
                     <img src="img/easyclaim_logo.png" alt="easyclaim">
                     <h1>experience effortless claim process</h1>
-                 <a href="">what to do in case of accident?<i class="fa fa-search"></i></a>
-
+                    <div class="wrapper">
+                        <a href="" id="signin">Sign in</a>
+                        <a href="" id="register">Register</a>
+                    </div>
+                
+                    <div class="scrollDown"><i class="fa fa-arrow-down"></i></div>
                 </div>
-                <div class="scrollDown"><i class="fa fa-arrow-down"></i></div>
             </section>
-            <div class="sign_in_button">
-                Sign in <i class="fa fa-unlock-alt"></i>
-            </div>
-            <div class="register">Register<i class="fa fa-unlock-alt"></i>
-                <form action="" method="">
-                    <input type="text" id="firstname" placeholder="Firstname"/>
-                    <input type="text" id="lastname" placeholder="Lastname"/>
-                    <input type="email" id="email" placeholder="Email"/>
-                    <input type="password" id="password" placeholder="Password"/>
-                    <input type="password" id="password_confirm" placeholder="Password confirm"/>
-                    <input type="submit" value="Register">
-                </form>
-            </div>
+            <section id="guide">
+                <h2>what to do in case of accident?</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, repellendus, tempore, libero pariatur explicabo laborum doloribus consectetur veritatis corrupti architecto saepe deleniti excepturi et placeat minus id vero nostrum provident.
+            </section>
             <div id="map">
                 
             </div>
-
+            <footer>
+                <p>c.WebolutionCreative</p>
+            </footer>
         </div> <!-- container ends -->
+
+        <!-- Popups -->
+
+        <div id="signinPopup">
+            Sign in
+            <span role="close-modal"><i class="fa fa-times"></i></span>
+            <form action="" method="">
+                <input type="email" id="email" placeholder="Email"/>
+                <input type="password" id="password" placeholder="Password"/>
+                <input type="submit" value="Sign">
+            </form>
+        </div>
+        <div id="registerPopup">
+            Register
+            <span role="close-modal"><i class="fa fa-times"></i></span>
+            <form action="" method="">
+                <input type="text" id="firstname" placeholder="Firstname"/>
+                <input type="text" id="lastname" placeholder="Lastname"/>
+                <input type="email" id="email" placeholder="Email"/>
+                <input type="password" id="password" placeholder="Password"/>
+                <input type="password" id="password_confirm" placeholder="Password confirm"/>
+                <input type="submit" value="Register">
+            </form>
+        </div>
         <div class="white_screen"></div>
         <div class="black_screen hidden"></div>
 
-        <div class="sign_in"></div>
       
         <!-- your site ends-->
 
@@ -90,10 +110,11 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/jquery.easing.1.3.js"></script>
-        <script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
-        <script src="js/geo-min.js"></script>
-        <script src="js/googlemaps.js"></script>
+        <script src="js/modal.js"></script>
         <script src="js/main.js"></script>
+        <!--<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>-->
+        <!--<script src="js/geo-min.js"></script>-->
+        <!--<script src="js/googlemaps.js"></script>-->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

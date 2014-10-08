@@ -22,22 +22,24 @@
     display: block;
     margin: auto;
     margin-bottom: 0.5em;
-    border: 1px $lightBlue solid;
+    border: 1px $paleBlue solid;
     line-height: 150%;
     color: $blue;
     // padding: 0.3em;
     
 }
-@mixin easysubmit(){
+@mixin easysubmit($width:85%, $colour:$darkBlue){
 	border: none;
 	border-radius: 0.2em;;
-	background: $darkBlue;
+	background: $colour !important;
 	color:#fff;
-	width: 85%;
+	width: $width;
 	padding: 0.3em;
 }
 
-@mixin easyPlaceholder(){
-	color:    $blue;
+@mixin easyPlaceholder($color:$blue){
+	
+	color:    $color;
     opacity:  0.6;
+    padding-left: 0.5em;
 }
