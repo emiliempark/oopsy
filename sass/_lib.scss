@@ -10,6 +10,10 @@
 	box-shadow: 1px 1px 3px rgba(0,0,0, 0.7);
 }
 
+@mixin kill_boxshadow(){
+	box-shadow: none;
+}
+
 @mixin bottomCenter($bottomMargin:1.5em){
 	position:absolute;
     bottom: $bottomMargin;
@@ -25,9 +29,9 @@
     border: 1px $paleBlue solid;
     line-height: 150%;
     color: $blue;
-    // padding: 0.3em;
-    
+    // padding: 0.3em;    
 }
+
 @mixin easysubmit($width:85%, $colour:$darkBlue){
 	border: none;
 	border-radius: 0.2em;;

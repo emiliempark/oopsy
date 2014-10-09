@@ -32,12 +32,12 @@
                 <nav id="leftControl" class="control_panel left">
                     <p class="user_menu"><i class="fa fa-user"></i>Hello, John Doe</p>
                     <ul>
-                        <li><a href=""><i class="fa fa-file-text-o"></i>Create a report</a></li>
-                        <li><a href=""><i class="fa fa-folder-open"></i>Manage reports</a></li>
-                        <li><a href=""><i class="fa fa-search"></i>Find services</a></li>
-                        <li><a href=""><i class="fa fa-paper-plane"></i></i>Become a service</a></li>
-                        <li><a href=""><i class="fa fa-cog"></i>Profile settings</a></li>
-                        <li><a href="" class="user_menu" role="signout"><i class="fa fa-lock"></i>Sign out</a></li>
+                        <li><a href=""><i class="fa fa-file-text-o"></i><span>Create a report</span></a></li>
+                        <li><a href=""><i class="fa fa-folder-open"></i><span>Manage reports</span></a></li>
+                        <li><a href=""><i class="fa fa-search"></i><span>Find services</span></a></li>
+                        <li><a href=""><i class="fa fa-paper-plane"></i></i><span>Become a service</span></a></li>
+                        <li><a href=""><i class="fa fa-cog"></i><span>Profile settings</span></a></li>
+                        <li><a href="" class="user_menu" role="signout"><i class="fa fa-lock"></i><span>Sign out</span></a></li>
                     </ul>
                 </nav>
                 <nav id="rightControl" class="control_panel right">
@@ -64,9 +64,21 @@
                     <div class="scrollDown"><i class="fa fa-arrow-down"></i></div>
                 </div>
             </section>
-            <section id="guide">
+            <section class="guide">
                 <h2>what to do in case of accident?</h2>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, repellendus, tempore, libero pariatur explicabo laborum doloribus consectetur veritatis corrupti architecto saepe deleniti excepturi et placeat minus id vero nostrum provident.
+                <p><i class="fa fa-check-circle-o"></i>
+                   Stop straight away and help anyone who’s injured. Call an ambulance if it’s needed and tell the Police within 24 hours.  If an animal has been injured and you can’t find the owners, tell the SPCA or the Police as soon as you can.
+                </p>
+                <p><i class="fa fa-check-circle-o"></i>
+                   Give your name and address to owners of cars or property that’s been damaged.  If other drivers are involved, try to find out whether they’re insured and who they’re insured with.
+                </p>
+                <p><i class="fa fa-check-circle-o"></i>
+                   And if your claim involves damage to someone else’s property, or injury to someone else, don’t admit you’re at fault. Simply say you need to speak to your insurer, and complete this claim form.
+                </p>
+                <p><i class="fa fa-lightbulb-o"></i>
+                   Easyclaim will help your insurance claim process easier and faster by capturing all the important information about an accident at the scene.
+                </p>
+
             </section>
             <div id="map">
                 
@@ -79,7 +91,7 @@
         <!-- Popups -->
 
         <div id="signinPopup">
-            Sign in
+            <h2>Sign in</h2>
             <span role="close-modal"><i class="fa fa-times"></i></span>
             <form action="" method="">
                 <input type="email" id="email" placeholder="Email"/>
@@ -88,7 +100,7 @@
             </form>
         </div>
         <div id="registerPopup">
-            Register
+            <h2>Register</h2>
             <span role="close-modal"><i class="fa fa-times"></i></span>
             <form action="" method="">
                 <input type="text" id="firstname" placeholder="Firstname"/>

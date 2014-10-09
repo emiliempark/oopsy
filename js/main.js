@@ -54,7 +54,7 @@ $(function(){
 	var oModal1 = makeModal("signin", "signinPopup");
 	oModal1.initialise();
 
-	var oModal2 = makeModal("emailHandle", "emailForm");
+	var oModal2 = makeModal("register", "registerPopup");
 	oModal2.initialise();
 
 });

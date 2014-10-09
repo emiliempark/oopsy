@@ -7,18 +7,18 @@ function makeModal(sHANDLE_ID, sTARGET_ID) {
 		"targetID":sTARGET_ID,
 		"show": function() {
 
-				$("#background").show().animate({width:"100%", height:"100%"}, 1000); 
-				$("#"+this.targetID).appendTo("#background"); 
+				$("#background").show().animate({width:"100%", height:"100%"}, 500); 
+				$("#"+this.targetID).css({"display":"block"}).appendTo("#background"); 
 
 		},
 		"hide": function() { 
 
 				var that = this; 
 
-				$("#background").animate({width:"0%", height:"0%"}, 1000, function(){
+				$("#background").animate({width:"0%", height:"0%"}, 500, function(){
 
 					$(this).hide();
-					$("#"+that.targetID).appendTo("body"); 
+					$("#"+that.targetID).css({"display":"none"}).appendTo("body"); 
 
 				});
 
@@ -37,7 +37,7 @@ function makeModal(sHANDLE_ID, sTARGET_ID) {
 											   "height": "0%",
 											   "overflow": "hidden",
 											   "z-index": "1000",
-											   "background-color":"rgba(0,0,0,0.5)",
+											   "background-color":"rgba(255,255,255,0.6)",
 											   "display": "none" }; 
 
 					$('<div id="background"></div>').css(obackgroundStyle).appendTo("body");
