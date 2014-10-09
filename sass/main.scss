@@ -204,15 +204,20 @@ header{
         width:50%;
         height:100%;
         top:0;
-        font-size:0;
         border: none;
         background-color:transparent;
+        i{
+            color: rgba(255,255,255,0.7);
+            margin: 0 1em;
+        }
     }
     .left_button{
         left:0;
+        text-align:left;
     }
     .right_button{
         right:0;
+        text-align:right;
     }
 }
 
@@ -246,7 +251,7 @@ header{
             text-decoration: none;
             border-top: rgba(255,255,255, 0.5) 1px solid;
         }
-        a:hover{
+        a:hover,a:focus{
             background-color: $blue;
             border-top: $blue 1px solid;;
         }
@@ -324,7 +329,7 @@ header{
             text-align:center;
             line-height:2em;
             border-radius: 1em;
-            border: 1px #fff solid;
+            border: 1px #fff solid;;
             @include bottomCenter();
             @include textshadow();
 
@@ -346,12 +351,17 @@ header{
         text-decoration: none;
         @include roundtap($blue,2em);
     }
-    p{
-        display:block;
+    ul{
         width:90%;
         margin: 0 auto;
-        padding: 0 0 1em 0;
-        color:$grayBlue;
+        li{
+            width:calc(100%/1);
+            display:inline-block;
+            float:left;
+            padding: 0 0 1em 0;
+            color:$grayBlue;
+        }
+        
     }
 }
 
@@ -402,7 +412,7 @@ header{
     top:0;
     right:0;
     padding-right: 0.5em;
-}
+    }
 }
 #map{
     width: 100%;
@@ -432,20 +442,17 @@ input[type="submit"]{
     border:1px red solid;
 }
 
+.firstSection{
+    margin: 5em 0 0 0;
+}
+
 /*for mobile landscatp & tablet portait - inclusive*/
 @media only screen and (min-width : 40em) {
 
     #container{
-        border:1px blue solid;
+        border:3px yellow solid;
     }
-   
-}
-
-
-
-/*for tablet & destop - inclusive*/
-@media only screen and (min-width : 60em) {
-   header{
+    header{
         width: 100%;
         height:auto;
         background-color:$grayBlue; 
@@ -454,13 +461,17 @@ input[type="submit"]{
     }
 
     .tap_panel{
-        width: 20%;
+        display:flex;
+        flex-basis:10em;
+        align-items: flex-start; 
         background-color: $blue;
         position: relative;
         z-index:0;
         float: left;
         @include kill_boxshadow();
         img{
+            display:block;
+            margin: 0 auto;
         }
         button{
             display: none;
@@ -471,8 +482,10 @@ input[type="submit"]{
         // left:0;
     }
     .control_panel.left{
+        display:flex;
+        flex-grow: 1;
+        justify-content: space-between;
         position:static;
-        width: 80%;
         height:3em;
         background-color: transparent; 
         padding: 0 0.8em 0;
@@ -481,26 +494,30 @@ input[type="submit"]{
             color: $lightBlue; 
         }
         p{
+            display:flex;
+            align-self: center;
             padding: 0.8em 0.5em;
             margin: 0;
             float: left;
+            font-size:0.8em;
         }
         ul{
             background-color: transparent;
             margin:0;
-            float:left;
+            display:flex;
+            justify-content:flex-end;
             li{
-                display: inline-block;
+                display:flex;
+
             }
             a{
-                display:block;
-                padding: 0.8em 0.4em;
+                padding: 0.8em 0.5em;
                 color: #fff;
                 background-color: transparent;
                 text-decoration: none;
                 border-top: none;
             }
-            a:hover{
+            a:hover, a:focus{
                 background-color: $blue;
                 border-top: none;
             }
@@ -511,7 +528,66 @@ input[type="submit"]{
         span{
             display:none;
         }
-    }   
+    } 
+
+    .main{
+        .main_landing{
+            margin: 2em 0 0 0;
+        }
+    }  
+    .firstSection{
+        margin: 2em 0 0 0;
+    }
+
+    .guide{
+
+        h2{
+
+        }
+        ul{
+
+            li{
+                width:calc(100%/2);
+            }
+            
+        }
+    }
+
+}
+
+
+/*for tablet & destop - inclusive*/
+@media only screen and (min-width : 60em) {
+    #container{
+        border:1px green solid;
+    }
+
+    .control_panel.left{
+       
+       
+        i{
+            display:none;
+        }
+        span{
+            display:block;
+            font-size:0.8em;
+        }
+    }
+
+    .guide{
+
+        h2{
+
+        }
+        ul{
+
+            li{
+                width:calc(100%/4);
+            }
+            
+        }
+    }
+  
 }
 
 

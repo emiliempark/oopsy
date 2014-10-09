@@ -20,8 +20,7 @@ main,
 nav,
 section,
 summary {
-  display: block;
-}
+  display: block; }
 
 /**
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
@@ -31,8 +30,7 @@ canvas,
 video {
   display: inline-block;
   *display: inline;
-  *zoom: 1;
-}
+  *zoom: 1; }
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
@@ -40,16 +38,14 @@ video {
  */
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 /**
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  * Known issue: no IE 6 support.
  */
 [hidden] {
-  display: none;
-}
+  display: none; }
 
 /* ==========================================================================
    Base
@@ -66,8 +62,7 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Address `font-family` inconsistency between `textarea` and other form
@@ -79,15 +74,13 @@ input,
 input[type="submit"],
 select,
 textarea {
-  font-family: sans-serif;
-}
+  font-family: sans-serif; }
 
 /**
  * Address margins handled incorrectly in IE 6/7.
  */
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 /* ==========================================================================
    Links
@@ -96,16 +89,14 @@ body {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 a:focus {
-  outline: thin dotted;
-}
+  outline: thin dotted; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 a:active,
 a:hover {
-  outline: 0;
-}
+  outline: 0; }
 
 /* ==========================================================================
    Typography
@@ -117,59 +108,49 @@ a:hover {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
-}
+  margin: 0.67em 0; }
 
 h2 {
   font-size: 1.5em;
-  margin: 0.83em 0;
-}
+  margin: 0.83em 0; }
 
 h3 {
   font-size: 1.17em;
-  margin: 1em 0;
-}
+  margin: 1em 0; }
 
 h4 {
   font-size: 1em;
-  margin: 1.33em 0;
-}
+  margin: 1.33em 0; }
 
 h5 {
   font-size: 0.83em;
-  margin: 1.67em 0;
-}
+  margin: 1.67em 0; }
 
 h6 {
   font-size: 0.67em;
-  margin: 2.33em 0;
-}
+  margin: 2.33em 0; }
 
 /**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
 abbr[title] {
-  border-bottom: 1px dotted;
-}
+  border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
 b,
 strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 blockquote {
-  margin: 1em 40px;
-}
+  margin: 1em 40px; }
 
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
 dfn {
-  font-style: italic;
-}
+  font-style: italic; }
 
 /**
  * Address differences between Firefox and other browsers.
@@ -178,24 +159,21 @@ dfn {
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 0;
-}
+  height: 0; }
 
 /**
  * Address styling not present in IE 6/7/8/9.
  */
 mark {
   background: #ff0;
-  color: #000;
-}
+  color: #000; }
 
 /**
  * Address margins set differently in IE 6/7.
  */
 p,
 pre {
-  margin: 1em 0;
-}
+  margin: 1em 0; }
 
 /**
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
@@ -206,8 +184,7 @@ pre,
 samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 /**
  * Improve readability of pre-formatted text in all browsers.
@@ -215,15 +192,13 @@ samp {
 pre {
   white-space: pre;
   white-space: pre-wrap;
-  word-wrap: break-word;
-}
+  word-wrap: break-word; }
 
 /**
  * Address CSS quotes not supported in IE 6/7.
  */
 q {
-  quotes: none;
-}
+  quotes: none; }
 
 /**
  * Address `quotes` property not supported in Safari 4.
@@ -231,15 +206,13 @@ q {
 q:before,
 q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
 small {
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
@@ -249,16 +222,13 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 sup {
-  top: -0.5em;
-}
+  top: -0.5em; }
 
 sub {
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
 /* ==========================================================================
    Lists
@@ -270,12 +240,10 @@ dl,
 menu,
 ol,
 ul {
-  margin: 1em 0;
-}
+  margin: 1em 0; }
 
 dd {
-  margin: 0 0 0 40px;
-}
+  margin: 0 0 0 40px; }
 
 /**
  * Address paddings set differently in IE 6/7.
@@ -283,8 +251,7 @@ dd {
 menu,
 ol,
 ul {
-  padding: 0 0 0 40px;
-}
+  padding: 0 0 0 40px; }
 
 /**
  * Correct list images handled incorrectly in IE 7.
@@ -292,8 +259,7 @@ ul {
 nav ul,
 nav ol {
   list-style: none;
-  list-style-image: none;
-}
+  list-style-image: none; }
 
 /* ==========================================================================
    Embedded content
@@ -306,15 +272,13 @@ img {
   border: 0;
   /* 1 */
   -ms-interpolation-mode: bicubic;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Correct overflow displayed oddly in IE 9.
  */
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /* ==========================================================================
    Figures
@@ -323,8 +287,7 @@ svg:not(:root) {
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
 figure {
-  margin: 0;
-}
+  margin: 0; }
 
 /* ==========================================================================
    Forms
@@ -333,8 +296,7 @@ figure {
  * Correct margin displayed oddly in IE 6/7.
  */
 form {
-  margin: 0;
-}
+  margin: 0; }
 
 /**
  * Define consistent border, margin, and padding.
@@ -342,8 +304,7 @@ form {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
+  padding: 0.35em 0.625em 0.75em; }
 
 /**
  * 1. Correct color not being inherited in IE 6/7/8/9.
@@ -357,8 +318,7 @@ legend {
   white-space: normal;
   /* 2 */
   *margin-left: -7px;
-  /* 3 */
-}
+  /* 3 */ }
 
 /**
  * 1. Correct font size not being inherited in all browsers.
@@ -378,8 +338,7 @@ textarea {
   vertical-align: baseline;
   /* 3 */
   *vertical-align: middle;
-  /* 3 */
-}
+  /* 3 */ }
 
 /**
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
@@ -388,8 +347,7 @@ textarea {
 button,
 input,
 input[type="submit"] {
-  line-height: normal;
-}
+  line-height: normal; }
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -399,8 +357,7 @@ input[type="submit"] {
  */
 button,
 select {
-  text-transform: none;
-}
+  text-transform: none; }
 
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -420,16 +377,14 @@ input[type="submit"] {
   cursor: pointer;
   /* 3 */
   *overflow: visible;
-  /* 4 */
-}
+  /* 4 */ }
 
 /**
  * Re-set default cursor for disabled elements.
  */
 button[disabled],
 html input[disabled] {
-  cursor: default;
-}
+  cursor: default; }
 
 /**
  * 1. Address box sizing set to content-box in IE 8/9.
@@ -446,8 +401,7 @@ input[type="radio"] {
   *height: 13px;
   /* 3 */
   *width: 13px;
-  /* 3 */
-}
+  /* 3 */ }
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -460,8 +414,7 @@ input[type="search"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-  box-sizing: content-box;
-}
+  box-sizing: content-box; }
 
 /**
  * Remove inner padding and search cancel button in Safari 5 and Chrome
@@ -469,8 +422,7 @@ input[type="search"] {
  */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 /**
  * Remove inner padding and border in Firefox 3+.
@@ -479,8 +431,7 @@ button::-moz-focus-inner,
 input::-moz-focus-inner,
 input[type="submit"]::-moz-focus-inner {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /**
  * 1. Remove default vertical scrollbar in IE 6/7/8/9.
@@ -490,8 +441,7 @@ textarea {
   overflow: auto;
   /* 1 */
   vertical-align: top;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* ==========================================================================
    Tables
@@ -501,8 +451,7 @@ textarea {
  */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 html,
 button,
@@ -510,24 +459,20 @@ input,
 input[type="submit"],
 select,
 textarea {
-  color: #222;
-}
+  color: #222; }
 
 html {
   font-size: 1em;
-  line-height: 1.4;
-}
+  line-height: 1.4; }
 
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-  outline: none;
-}
+  outline: none; }
 
 input:focus {
-  border-color: #5373a5;
-}
+  border-color: #5373a5; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -537,42 +482,36 @@ input:focus {
 ::-moz-selection {
   background: #5373a5;
   text-shadow: none;
-  color: #fff;
-}
+  color: #fff; }
 
 ::selection {
   background: #c1d3e8;
   text-shadow: none;
-  color: white;
-}
+  color: white; }
 
 ::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #5373a5;
   opacity: 0.6;
-  padding-left: 0.5em;
-}
+  padding-left: 0.5em; }
 
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #5373a5;
   opacity: 0.6;
-  padding-left: 0.5em;
-}
+  padding-left: 0.5em; }
 
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #5373a5;
   opacity: 0.6;
-  padding-left: 0.5em;
-}
+  padding-left: 0.5em; }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: #5373a5;
   opacity: 0.6;
-  padding-left: 0.5em;
-}
+  padding-left: 0.5em; }
 
 /*A better looking default horizontal rule*/
 hr {
@@ -581,8 +520,7 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*
  * Remove the gap between images, videos, audio and canvas and the bottom of
@@ -592,8 +530,7 @@ audio,
 canvas,
 img,
 video {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
@@ -601,15 +538,13 @@ video {
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*
  * Allow only vertical resizing of textareas.
  */
 textarea {
-  resize: vertical;
-}
+  resize: vertical; }
 
 /* ==========================================================================
    Browse Happy prompt
@@ -618,15 +553,13 @@ textarea {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0;
-}
+  padding: 0.2em 0; }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 i {
-  margin-right: 0.3em;
-}
+  margin-right: 0.3em; }
 
 h2 {
   font-size: 1em;
@@ -636,13 +569,11 @@ h2 {
   padding: 0.3em;
   width: 90%;
   margin: auto;
-  margin-bottom: 1em;
-}
+  margin-bottom: 1em; }
 
 ul, li {
   list-style-type: none;
-  padding: 0;
-}
+  padding: 0; }
 
 input, input[type="submit"] {
   width: 85%;
@@ -651,8 +582,7 @@ input, input[type="submit"] {
   margin-bottom: 0.5em;
   border: 1px #c1d3e8 solid;
   line-height: 150%;
-  color: #5373a5;
-}
+  color: #5373a5; }
 
 /* ==========================================================================
    emilie
@@ -664,8 +594,7 @@ input, input[type="submit"] {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
-}
+  z-index: 100; }
 
 .black_screen {
   width: 100%;
@@ -674,16 +603,13 @@ input, input[type="submit"] {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
-}
+  z-index: 100; }
 
 header {
-  background-color: #3e3e42;
-}
-header #toplogo {
-  float: left;
-  display: none;
-}
+  background-color: #3e3e42; }
+  header #toplogo {
+    float: left;
+    display: none; }
 
 .tap_panel {
   width: 100%;
@@ -695,26 +621,25 @@ header #toplogo {
   position: fixed;
   z-index: 500;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
-.tap_panel img {
-  width: 100px;
-}
-.tap_panel .left_button, .tap_panel .right_button {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  font-size: 0;
-  border: none;
-  background-color: transparent;
-}
-.tap_panel .left_button {
-  left: 0;
-}
-.tap_panel .right_button {
-  right: 0;
-}
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); }
+  .tap_panel img {
+    width: 100px; }
+  .tap_panel .left_button, .tap_panel .right_button {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    border: none;
+    background-color: transparent; }
+    .tap_panel .left_button i, .tap_panel .right_button i {
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0 1em; }
+  .tap_panel .left_button {
+    left: 0;
+    text-align: left; }
+  .tap_panel .right_button {
+    right: 0;
+    text-align: right; }
 
 .control_panel {
   position: fixed;
@@ -724,137 +649,118 @@ header #toplogo {
   background-color: #3e3e42;
   color: #fff;
   padding: 0 0.8em 0;
-  z-index: 200;
-}
-.control_panel .user_menu {
-  color: #8fb2d8;
-}
-.control_panel p {
-  padding: 0.8em 0.5em;
-  margin: 3.3em 0 0 0;
-}
-.control_panel ul {
-  background-color: transparent;
-  margin: 0;
-}
-.control_panel ul a {
-  display: block;
-  padding: 0.8em 0.5em;
-  color: #fff;
-  background-color: transparent;
-  text-decoration: none;
-  border-top: rgba(255, 255, 255, 0.5) 1px solid;
-}
-.control_panel ul a:hover {
-  background-color: #5373a5;
-  border-top: #5373a5 1px solid;
-}
-.control_panel i {
-  margin-right: 1em;
-}
+  z-index: 200; }
+  .control_panel .user_menu {
+    color: #8fb2d8; }
+  .control_panel p {
+    padding: 0.8em 0.5em;
+    margin: 3.3em 0 0 0; }
+  .control_panel ul {
+    background-color: transparent;
+    margin: 0; }
+    .control_panel ul a {
+      display: block;
+      padding: 0.8em 0.5em;
+      color: #fff;
+      background-color: transparent;
+      text-decoration: none;
+      border-top: rgba(255, 255, 255, 0.5) 1px solid; }
+    .control_panel ul a:hover, .control_panel ul a:focus {
+      background-color: #5373a5;
+      border-top: #5373a5 1px solid; }
+  .control_panel i {
+    margin-right: 1em; }
 
 #leftControl {
   left: -100%;
-  transition: left 0.5s ease;
-}
+  transition: left 0.5s ease; }
 
 #rightControl {
   right: -100%;
-  transition: right 0.5s ease;
-}
+  transition: right 0.5s ease; }
 
 #leftControl.show {
-  left: 0%;
-}
+  left: 0%; }
 
 #rightControl.show {
-  right: 0%;
-}
+  right: 0%; }
 
 .main {
   height: 90vh;
   background: #fff;
   position: relative;
   border-top: 1px transparent solid;
-  z-index: 1;
-}
-.main h1 {
-  width: 90%;
-  color: #fff;
-  font-size: 1em;
-  font-weight: normal;
-  margin: 0 auto 1em;
-  text-align: center;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-.main .main_landing {
-  height: 80%;
-  border-top: 1px #fff solid;
-  background-image: url(../img/bokeh.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 5em 0 0 0;
-  position: relative;
-}
-.main .main_landing img {
-  display: block;
-  margin: 3.5em auto 6em;
-  border-top: 1px transparent solid;
-}
-.main .main_landing .wrapper {
-  width: 100%;
-  text-align: center;
-}
-.main .main_landing .wrapper #signin, .main .main_landing .wrapper #register {
-  display: inline-block;
-  text-decoration: none;
-  border: none;
-  border-radius: 0.2em;
-  background: rgba(0, 0, 0, 0.55) !important;
-  color: #fff;
-  width: 5.5em;
-  padding: 0.3em;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-.main .main_landing .scrollDown {
-  width: 2em;
-  height: 2em;
-  text-align: center;
-  line-height: 2em;
-  border-radius: 1em;
-  border: 1px #fff solid;
-  position: absolute;
-  bottom: 1.5em;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-.main .main_landing .scrollDown i {
-  color: #fff;
-  margin: 0 0 0 1px;
-}
+  z-index: 1; }
+  .main h1 {
+    width: 90%;
+    color: #fff;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0 auto 1em;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); }
+  .main .main_landing {
+    height: 80%;
+    border-top: 1px #fff solid;
+    background-image: url(../img/bokeh.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5em 0 0 0;
+    position: relative; }
+    .main .main_landing img {
+      display: block;
+      margin: 3.5em auto 6em;
+      border-top: 1px transparent solid; }
+    .main .main_landing .wrapper {
+      width: 100%;
+      text-align: center; }
+      .main .main_landing .wrapper #signin, .main .main_landing .wrapper #register {
+        display: inline-block;
+        text-decoration: none;
+        border: none;
+        border-radius: 0.2em;
+        background: rgba(0, 0, 0, 0.55) !important;
+        color: #fff;
+        width: 5.5em;
+        padding: 0.3em;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); }
+    .main .main_landing .scrollDown {
+      width: 2em;
+      height: 2em;
+      text-align: center;
+      line-height: 2em;
+      border-radius: 1em;
+      border: 1px #fff solid;
+      position: absolute;
+      bottom: 1.5em;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); }
+      .main .main_landing .scrollDown i {
+        color: #fff;
+        margin: 0 0 0 1px; }
 
 .guide {
-  padding: 0 0 2em 0;
-}
-.guide h2 {
-  width: 90%;
-  color: #5373a5;
-  text-align: center;
-  text-decoration: none;
-  border: 3px #5373a5 solid;
-  border-radius: 2em;
-  padding: 5px;
-}
-.guide p {
-  display: block;
-  width: 90%;
-  margin: 0 auto;
-  padding: 0 0 1em 0;
-  color: #3e3e42;
-}
+  padding: 0 0 2em 0; }
+  .guide h2 {
+    width: 90%;
+    color: #5373a5;
+    text-align: center;
+    text-decoration: none;
+    border: 3px #5373a5 solid;
+    border-radius: 2em;
+    padding: 5px; }
+  .guide ul {
+    width: 90%;
+    margin: 0 auto; }
+    .guide ul li {
+      width: calc(100%/1);
+      display: inline-block;
+      float: left;
+      padding: 0 0 1em 0;
+      color: #3e3e42; }
 
 #signinPopup, #registerPopup {
   width: 90%;
@@ -867,69 +773,56 @@ header #toplogo {
   top: 50%;
   left: 50%;
   display: none;
-  transform: translate(-50%, -50%);
-}
-#signinPopup h2, #registerPopup h2 {
-  margin: 1em auto 0;
-  border: none;
-  font-weight: normal;
-}
-#signinPopup form, #registerPopup form {
-  padding: 1em;
-}
-#signinPopup input, #registerPopup input {
-  background-color: #5373a5;
-  border-color: #c1d3e8;
-  color: #fff;
-}
-#signinPopup input:focus, #registerPopup input:focus {
-  border-color: #fff;
-}
-#signinPopup ::-webkit-input-placeholder, #registerPopup ::-webkit-input-placeholder {
-  /* WebKit browsers */
-  color: #c1d3e8;
-  opacity: 0.6;
-  padding-left: 0.5em;
-}
-#signinPopup :-moz-placeholder, #registerPopup :-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #c1d3e8;
-  opacity: 0.6;
-  padding-left: 0.5em;
-}
-#signinPopup ::-moz-placeholder, #registerPopup ::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #c1d3e8;
-  opacity: 0.6;
-  padding-left: 0.5em;
-}
-#signinPopup :-ms-input-placeholder, #registerPopup :-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  color: #c1d3e8;
-  opacity: 0.6;
-  padding-left: 0.5em;
-}
-#signinPopup [role="close-modal"], #registerPopup [role="close-modal"] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-right: 0.5em;
-}
+  transform: translate(-50%, -50%); }
+  #signinPopup h2, #registerPopup h2 {
+    margin: 1em auto 0;
+    border: none;
+    font-weight: normal; }
+  #signinPopup form, #registerPopup form {
+    padding: 1em; }
+  #signinPopup input, #registerPopup input {
+    background-color: #5373a5;
+    border-color: #c1d3e8;
+    color: #fff; }
+  #signinPopup input:focus, #registerPopup input:focus {
+    border-color: #fff; }
+  #signinPopup ::-webkit-input-placeholder, #registerPopup ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #c1d3e8;
+    opacity: 0.6;
+    padding-left: 0.5em; }
+  #signinPopup :-moz-placeholder, #registerPopup :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #c1d3e8;
+    opacity: 0.6;
+    padding-left: 0.5em; }
+  #signinPopup ::-moz-placeholder, #registerPopup ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #c1d3e8;
+    opacity: 0.6;
+    padding-left: 0.5em; }
+  #signinPopup :-ms-input-placeholder, #registerPopup :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #c1d3e8;
+    opacity: 0.6;
+    padding-left: 0.5em; }
+  #signinPopup [role="close-modal"], #registerPopup [role="close-modal"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 0.5em; }
 
 #map {
   width: 100%;
   height: 20em;
-  background-color: #c1d3e8;
-}
+  background-color: #c1d3e8; }
 
 footer {
   background-color: #4b464d;
   color: #fff;
-  padding: 0.5em;
-}
-footer p {
-  font-size: 0.9em;
-}
+  padding: 0.5em; }
+  footer p {
+    font-size: 0.9em; }
 
 input[type="submit"] {
   border: none;
@@ -937,88 +830,104 @@ input[type="submit"] {
   background: #4b464d !important;
   color: #fff;
   width: 85%;
-  padding: 0.3em;
-}
+  padding: 0.3em; }
 
 .control_panel.top {
-  display: none;
-}
+  display: none; }
 
 #container {
-  border: 1px red solid;
-}
+  border: 1px red solid; }
+
+.firstSection {
+  margin: 5em 0 0 0; }
 
 /*for mobile landscatp & tablet portait - inclusive*/
 @media only screen and (min-width: 40em) {
   #container {
-    border: 1px blue solid;
-  }
-}
-/*for tablet & destop - inclusive*/
-@media only screen and (min-width: 60em) {
+    border: 3px yellow solid; }
+
   header {
     width: 100%;
     height: auto;
     background-color: #3e3e42;
     display: flex;
-    justify-content: space-between;
-  }
+    justify-content: space-between; }
 
   .tap_panel {
-    width: 20%;
+    display: flex;
+    flex-basis: 10em;
+    align-items: flex-start;
     background-color: #5373a5;
     position: relative;
     z-index: 0;
     float: left;
-    box-shadow: none;
-  }
-  .tap_panel button {
-    display: none;
-  }
+    box-shadow: none; }
+    .tap_panel img {
+      display: block;
+      margin: 0 auto; }
+    .tap_panel button {
+      display: none; }
 
   .control_panel.left {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
     position: static;
-    width: 80%;
     height: 3em;
     background-color: transparent;
     padding: 0 0.8em 0;
-    z-index: 0;
-  }
-  .control_panel.left .user_menu {
-    color: #8fb2d8;
-  }
-  .control_panel.left p {
-    padding: 0.8em 0.5em;
-    margin: 0;
-    float: left;
-  }
-  .control_panel.left ul {
-    background-color: transparent;
-    margin: 0;
-    float: left;
-  }
-  .control_panel.left ul li {
-    display: inline-block;
-  }
-  .control_panel.left ul a {
-    display: block;
-    padding: 0.8em 0.4em;
-    color: #fff;
-    background-color: transparent;
-    text-decoration: none;
-    border-top: none;
-  }
-  .control_panel.left ul a:hover {
-    background-color: #5373a5;
-    border-top: none;
-  }
+    z-index: 0; }
+    .control_panel.left .user_menu {
+      color: #8fb2d8; }
+    .control_panel.left p {
+      display: flex;
+      align-self: center;
+      padding: 0.8em 0.5em;
+      margin: 0;
+      float: left;
+      font-size: 0.8em; }
+    .control_panel.left ul {
+      background-color: transparent;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end; }
+      .control_panel.left ul li {
+        display: flex; }
+      .control_panel.left ul a {
+        padding: 0.8em 0.5em;
+        color: #fff;
+        background-color: transparent;
+        text-decoration: none;
+        border-top: none; }
+      .control_panel.left ul a:hover, .control_panel.left ul a:focus {
+        background-color: #5373a5;
+        border-top: none; }
+    .control_panel.left i {
+      margin: 0 0.5em; }
+    .control_panel.left span {
+      display: none; }
+
+  .main .main_landing {
+    margin: 2em 0 0 0; }
+
+  .firstSection {
+    margin: 2em 0 0 0; }
+
+  .guide ul li {
+    width: calc(100%/2); } }
+/*for tablet & destop - inclusive*/
+@media only screen and (min-width: 60em) {
+  #container {
+    border: 1px green solid; }
+
   .control_panel.left i {
-    margin: 0 0.5em;
-  }
+    display: none; }
   .control_panel.left span {
-    display: none;
-  }
-}
+    display: block;
+    font-size: 0.8em; }
+
+  .guide ul li {
+    width: calc(100%/4); } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -1030,23 +939,20 @@ input[type="submit"] {
   border: 0;
   overflow: hidden;
   /* IE 6/7 fallback */
-  *text-indent: -9999px;
-}
+  *text-indent: -9999px; }
 
 .ir:before {
   content: "";
   display: block;
   width: 0;
-  height: 150%;
-}
+  height: 150%; }
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 .hidden {
   display: none !important;
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
@@ -1059,8 +965,7 @@ input[type="submit"] {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
-}
+  width: 1px; }
 
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
@@ -1073,15 +978,13 @@ input[type="submit"] {
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto;
-}
+  width: auto; }
 
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
 .invisible {
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 /*
  * Clearfix: contain floats
@@ -1099,20 +1002,17 @@ input[type="submit"] {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */
-}
+  /* 2 */ }
 
 .clearfix:after {
-  clear: both;
-}
+  clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
 .clearfix {
-  *zoom: 1;
-}
+  *zoom: 1; }
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -1120,11 +1020,9 @@ input[type="submit"] {
    Modify as content requires.
    ========================================================================== */
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+  /* Style adjustments for viewports that meet the condition */ }
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+  /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
@@ -1135,21 +1033,17 @@ input[type="submit"] {
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    text-shadow: none !important; }
 
   a,
   a:visited {
-    text-decoration: underline;
-  }
+    text-decoration: underline; }
 
   a[href]:after {
-    content: " (" attr(href) ")";
-  }
+    content: " (" attr(href) ")"; }
 
   abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
+    content: " (" attr(title) ")"; }
 
   /*
    * Don't show links for images, or javascript/internal links
@@ -1157,41 +1051,32 @@ input[type="submit"] {
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
-    content: "";
-  }
+    content: ""; }
 
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   thead {
     display: table-header-group;
-    /* h5bp.com/t */
-  }
+    /* h5bp.com/t */ }
 
   tr,
   img {
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   img {
-    max-width: 100% !important;
-  }
+    max-width: 100% !important; }
 
   @page {
-    margin: 0.5cm;
-  }
+    margin: 0.5cm; }
   p,
   h2,
   h3 {
     orphans: 3;
-    widows: 3;
-  }
+    widows: 3; }
 
   h2,
   h3 {
-    page-break-after: avoid;
-  }
-}
+    page-break-after: avoid; } }

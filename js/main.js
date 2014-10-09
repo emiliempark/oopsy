@@ -57,5 +57,14 @@ $(function(){
 	var oModal2 = makeModal("register", "registerPopup");
 	oModal2.initialise();
 
+	
+	$(".scrollDown").modernBlink({
+
+		duration: 3000, 
+		iterationCount: "infinite", 
+		auto: true 
+	});
+
+
 });
 
