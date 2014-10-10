@@ -57,18 +57,66 @@
             
             <section id="find_services" class="firstSection">
                 <h2><i class="fa fa-search"></i>find a service</h2>
-                <p><i class="fa fa-check-circle-o"></i>
-                   Stop straight away and help anyone who’s injured. Call an ambulance if it’s needed and tell the Police within 24 hours.  If an animal has been injured and you can’t find the owners, tell the SPCA or the Police as soon as you can.
-                </p>
-                <p><i class="fa fa-check-circle-o"></i>
-                   Give your name and address to owners of cars or property that’s been damaged.  If other drivers are involved, try to find out whether they’re insured and who they’re insured with.
-                </p>
-                <p><i class="fa fa-check-circle-o"></i>
-                   And if your claim involves damage to someone else’s property, or injury to someone else, don’t admit you’re at fault. Simply say you need to speak to your insurer, and complete this claim form.
-                </p>
-                <p><i class="fa fa-lightbulb-o"></i>
-                   Easyclaim will help your insurance claim process easier and faster by capturing all the important information about an accident at the scene.
-                </p>
+                <div class="category">
+                    <form action="" method="">
+                        <select name="serviceCategory" id="serviceCategory">
+                            <option value="" default selected>select what service need</option>
+                            <option value="wof">WOF</option>
+                            <option value="panel">Panel</option>
+                            <option value="etc">Etc.</option>
+                        </select>
+                        <input type="search" class="tftextinput" name="serviceSearch" placeholder="Search">
+                        <input type="submit" value="search">
+                    </form>
+                </div>
+                <div id="providers" class="clearfix"> 
+                    <ul class="clearfix">
+                       <li class="adItem">
+                           <div class="titleImg"></div>
+                           <div class="detail">
+                               <p class="name">Bla Motors</p>
+                               <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, amet!</p>
+                           </div>
+                           <div class="rank clearfix">
+                               <div class="rate"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></div>
+                               <div class="like"><i class="fa fa-heart"></i><span>30</span></div>
+                           </div>
+                       </li>
+                        <li class="adItem">
+                           <div class="titleImg"></div>
+                           <div class="detail">
+                               <p class="name">Var char Motors</p>
+                               <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, amet!</p>
+                           </div>
+                           <div class="rank clearfix">
+                               <div class="rate"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></div>
+                               <div class="like"><i class="fa fa-heart"></i><span>30</span></div>
+                           </div>
+                       </li>
+                       <li class="adItem">
+                           <div class="titleImg"></div>
+                           <div class="detail">
+                               <p class="name">Integer Motors</p>
+                               <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, amet!</p>
+                           </div>
+                           <div class="rank clearfix">
+                               <div class="rate"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></div>
+                               <div class="like"><i class="fa fa-heart"></i><span>30</span></div>
+                           </div>
+                       </li>
+                       <li class="adItem">
+                           <div class="titleImg"></div>
+                           <div class="detail">
+                               <p class="name">String Motors</p>
+                               <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, amet!</p>
+                           </div>
+                           <div class="rank clearfix">
+                               <div class="rate"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></div>
+                               <div class="like"><i class="fa fa-heart"></i><span>30</span></div>
+                           </div>
+                       </li>
+                    </ul>
+                </div>
 
             </section>
             <div id="map">

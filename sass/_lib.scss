@@ -3,8 +3,8 @@
 	border-radius: $radius;
 	padding: 5px;
 }
-@mixin textshadow(){
-	text-shadow: 1px 1px 3px rgba(0,0,0, 0.5);
+@mixin textshadow($opacity:0.5){
+	text-shadow: 1px 1px 3px rgba(0,0,0, $opacity);
 }
 @mixin boxshadow(){
 	box-shadow: 1px 1px 3px rgba(0,0,0, 0.7);
@@ -46,4 +46,9 @@
 	color:    $color;
     opacity:  0.6;
     padding-left: 0.5em;
+}
+
+@mixin rowalgin(){
+	width:90%;
+    margin: 0 auto;
 }
