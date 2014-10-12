@@ -308,10 +308,17 @@ header{
         margin: 5em 0 0 0;
         position: relative;
 
-        img{
+        svg{
             display:block;
+            width: 20%;
+            min-width: 15em;
+            max-width: 30em;
             margin: 3.5em auto 6em;;
             border-top:1px transparent solid;
+            path,polygon{
+                fill:#fff;
+                
+            }
         }
         .wrapper{
             width: 100%;
@@ -559,6 +566,10 @@ input[type="submit"]{
         z-index:0;
         float: left;
         @include kill_boxshadow();
+        a{
+            display:block;
+            width:100%;
+        }
         img{
             display:block;
             margin: 0 auto;

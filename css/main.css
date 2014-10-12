@@ -487,7 +487,7 @@ input:focus {
 ::selection {
   background: #c1d3e8;
   text-shadow: none;
-  color: white; }
+  color: #fff; }
 
 ::-webkit-input-placeholder {
   /* WebKit browsers */
@@ -708,10 +708,15 @@ header {
     background-repeat: no-repeat;
     margin: 5em 0 0 0;
     position: relative; }
-    .main .main_landing img {
+    .main .main_landing svg {
       display: block;
+      width: 20%;
+      min-width: 15em;
+      max-width: 30em;
       margin: 3.5em auto 6em;
       border-top: 1px transparent solid; }
+      .main .main_landing svg path, .main .main_landing svg polygon {
+        fill: #fff; }
     .main .main_landing .wrapper {
       width: 100%;
       text-align: center; }
@@ -928,6 +933,9 @@ input[type="submit"] {
     z-index: 0;
     float: left;
     box-shadow: none; }
+    .tap_panel a {
+      display: block;
+      width: 100%; }
     .tap_panel img {
       display: block;
       margin: 0 auto; }
@@ -1157,3 +1165,5 @@ input[type="submit"] {
   h2,
   h3 {
     page-break-after: avoid; } }
+
+/*# sourceMappingURL=main.css.map */
